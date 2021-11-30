@@ -29,11 +29,7 @@ jobs:
       run: |
         cd $(go env GOPATH)/bin
         ls
-        
-    - name: generating the asciidoctor docs
+    - name: CD into the workspace and list all the files in the source
       run: |
-        crd-ref-docs \
-        --source-path= $GITHUB_WORKSPACE./api \
-        --config=config.yaml \
-        --renderer=asciidoctor \
-        --templates-dir=templates/asciidoctor
+        cd $GITHUB_WORKSPACE
+        ls
