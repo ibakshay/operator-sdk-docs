@@ -1,0 +1,19 @@
+domain: akshay
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: docs-operator
+repo: github.com/ibakshay/operator-sdk-docs
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: akshay
+  group: akshay
+  kind: TestOperatorDocs
+  path: github.com/ibakshay/operator-sdk-docs/api/v1
+  version: v1
+version: "3"

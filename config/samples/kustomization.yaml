@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- akshay_v1_testoperatordocs.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

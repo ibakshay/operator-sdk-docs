@@ -1,0 +1,24 @@
+# permissions for end users to edit testoperatordocs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: testoperatordocs-editor-role
+rules:
+- apiGroups:
+  - akshay.akshay
+  resources:
+  - testoperatordocs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - akshay.akshay
+  resources:
+  - testoperatordocs/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+apiVersion: akshay.akshay/v1
+kind: TestOperatorDocs
+metadata:
+  name: testoperatordocs-sample
+spec:
+  # Add fields here
+  foo: bar
