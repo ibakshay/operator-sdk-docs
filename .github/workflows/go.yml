@@ -29,3 +29,11 @@ jobs:
       run: |
         cd $(go env GOPATH)/bin
         ls
+        
+    - name: generating the asciidoctor docs
+      run: |
+        crd-ref-docs \
+        --source-path=./api \
+        --config=config.yaml \
+        --renderer=asciidoctor \
+        --templates-dir=templates/asciidoctor
