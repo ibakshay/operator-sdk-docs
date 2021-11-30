@@ -33,10 +33,11 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/api
         ls
+        echo "${{ env.GITHUB_WORKSPACE }}"
     - name: generate doc for the operator
       run: |
         crd-ref-docs \ 
-        --source-path=${{env.GITHUB_WORKSPACE}}/api \
+        --source-path=/api \
         --config=config.yaml \
         --renderer=asciidoctor \
         --templates-dir=templates/asciidoctor
