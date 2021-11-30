@@ -1,0 +1,31 @@
+name: Go
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+      
+    - name: install the crd ref docs binary
+      run: go get -u github.com/elastic/crd-ref-docs
+      
+    - name: print GO Path
+      run: |
+        go env GOPATH
+        
+    - name: CD into the Go Path and list all the binaries inside
+      run: |
+        cd $(go env GOPATH)/bin
+        ls
