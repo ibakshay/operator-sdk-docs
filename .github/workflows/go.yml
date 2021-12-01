@@ -31,9 +31,9 @@ jobs:
         ls
     - name: CD into the workspace and list all the files in the source
       run: |
-        cd $GITHUB_WORKSPACE/api
-        ls
-        echo "${{ env.GITHUB_WORKSPACE }}"
+      #  cd $GITHUB_WORKSPACE/api
+     #   ls
+     #   echo "${{ env.GITHUB_WORKSPACE }}"
     - name: generate doc for the operator
       run: |
         ls
