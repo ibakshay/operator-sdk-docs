@@ -38,7 +38,7 @@ jobs:
       run: |
         ls
         crd-ref-docs \
-        --source-path=${{ github.workspace }}/api \
+        --source-path= $GITHUB_WORKSPACE/api \
         --config=config.yaml \
         --renderer=asciidoctor \
         --templates-dir=templates/asciidoctor
