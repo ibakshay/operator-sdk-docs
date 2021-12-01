@@ -34,8 +34,7 @@ TestOperatorDocs is the Schema for the testoperatordocs API
 | Field | Description
 | *`apiVersion`* __string__ | `akshay.akshay/v1`
 | *`kind`* __string__ | `TestOperatorDocs`
-| *`invalid type`* __invalid type__ | 
-| *`metadata`* __invalid type__ | Refer to Kubernetes API documentation for fields of `metadata`.
+| *`metadata`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta[$$ObjectMeta$$]__ | Refer to Kubernetes API documentation for fields of `metadata`.
 
 | *`spec`* __xref:{anchor_prefix}-docs-operator-api-v1-testoperatordocsspec[$$TestOperatorDocsSpec$$]__ | 
 |===
@@ -53,8 +52,7 @@ TestOperatorDocsList contains a list of TestOperatorDocs
 | Field | Description
 | *`apiVersion`* __string__ | `akshay.akshay/v1`
 | *`kind`* __string__ | `TestOperatorDocsList`
-| *`invalid type`* __invalid type__ | 
-| *`metadata`* __invalid type__ | Refer to Kubernetes API documentation for fields of `metadata`.
+| *`metadata`* __link:https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#listmeta-v1-meta[$$ListMeta$$]__ | Refer to Kubernetes API documentation for fields of `metadata`.
 
 | *`items`* __xref:{anchor_prefix}-docs-operator-api-v1-testoperatordocs[$$TestOperatorDocs$$]__ | 
 |===
