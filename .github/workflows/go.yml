@@ -36,10 +36,5 @@ jobs:
         echo "${{ env.GITHUB_WORKSPACE }}"
     - name: generate doc for the operator
       run: |
-        cd $GITHUB_WORKSPACE
+        cd ${{ github.workspace }}
         ls
-        crd-ref-docs \
-        --source-path=./api \
-        --config=config.yaml \
-        --renderer=asciidoctor \
-        --templates-dir=templates/asciidoctor
