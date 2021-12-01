@@ -30,6 +30,12 @@ type TestOperatorDocsSpec struct {
 
 	// Foo is an example field of TestOperatorDocs. Edit testoperatordocs_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
+
+	// Test description
+	AkshayVar string `json:"akshay_var"`
+
+	// Test description2
+	AkshayVar2 string `json:"akshay_var2"`
 }
 
 // TestOperatorDocsStatus defines the observed state of TestOperatorDocs
