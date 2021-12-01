@@ -38,7 +38,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         ls
-        crd-ref-docs \ 
+        crd-ref-docs \
         --source-path=./api \
         --config=config.yaml \
         --renderer=asciidoctor \
