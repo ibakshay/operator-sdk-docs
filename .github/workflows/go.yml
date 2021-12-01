@@ -19,7 +19,10 @@ jobs:
         go-version: 1.16
       
     - name: install the crd ref docs binary
-      run: go get -u github.com/elastic/crd-ref-docs
+      run: | 
+          go get -u github.com/elastic/crd-ref-docs
+          go get k8s.io/apimachinery/pkg/apis/meta/v1@v0.22.4
+          go get k8s.io/apimachinery/pkg/runtime/schema@v0.22.4
       
     - name: print GO Path
       run: |
