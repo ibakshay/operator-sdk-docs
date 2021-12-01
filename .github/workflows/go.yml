@@ -20,7 +20,8 @@ jobs:
       
     - name: install the crd ref docs binary
       run: | 
-          go get -u github.com/elastic/crd-ref-docs
+         # go get -u github.com/elastic/crd-ref-docs
+          go get -u github.com/ibakshay/crd-ref-docs@v1.1.1
           go get k8s.io/apimachinery/pkg/apis/meta/v1@v0.22.4
           go get k8s.io/apimachinery/pkg/runtime/schema@v0.22.4
       
@@ -37,8 +38,8 @@ jobs:
         crd-ref-docs \
         --source-path=./api \
         --config=config.yaml \
-        --renderer=asciidoctor \
-        --templates-dir=templates/asciidoctor
+        --renderer=markdown \
+        --templates-dir=templates/markdown
     - name: list the source code
       run: |
         ls 
