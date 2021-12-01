@@ -41,5 +41,10 @@ jobs:
         --templates-dir=templates/asciidoctor
     - name: list the source code
       run: |
-        ls        
+        ls 
+    - name: Commit and push the new generated file
+      uses: EndBug/add-and-commit@v7
+      with:
+        default_author: github_actions
+        add: '*.asciidoc --force'
         
