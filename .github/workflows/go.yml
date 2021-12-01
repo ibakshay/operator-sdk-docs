@@ -25,12 +25,12 @@ jobs:
       run: |
         go env GOPATH
         
-    - name: CD into the Go Path and list all the binaries inside
-      run: |
-        cd $(go env GOPATH)/bin
-        ls
-    - name: CD into the workspace and list all the files in the source
-      run: |
+   # - name: CD into the Go Path and list all the binaries inside
+    #  run: |
+     #   cd $(go env GOPATH)/bin
+    #    ls
+   # - name: CD into the workspace and list all the files in the source
+  #    run: |
       #  cd $GITHUB_WORKSPACE/api
      #   ls
      #   echo "${{ env.GITHUB_WORKSPACE }}"
