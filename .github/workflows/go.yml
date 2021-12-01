@@ -35,7 +35,7 @@ jobs:
     - name: generate doc for the operator
       run: |
         crd-ref-docs \
-        --source-path=$GITHUB_WORKSPACE/api \
+        --source-path=./api \
         --config=config.yaml \
         --renderer=asciidoctor \
         --templates-dir=templates/asciidoctor
