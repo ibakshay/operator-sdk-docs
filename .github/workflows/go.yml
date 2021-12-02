@@ -38,7 +38,9 @@ jobs:
         --source-path=./api \
         --config=config.yaml \
         --renderer=markdown \
-        --templates-dir=templates/markdown
+        --templates-dir=templates/markdown \
+        --output-path=./docs
+        
     - name: list the source code
       run: |
         ls 
